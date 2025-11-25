@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(31, 72%, 24%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 20px 30px;
+  background-color: bisque;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 5px 5px 20px;
+}
+
+.header h1 {
+  font-family: sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+.mainSection {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input label {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+#diceInput {
+  font-size: 24px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+}
+
+#rollBtn {
+  margin: 20px 0;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+  background-color: brown;
+  color: antiquewhite;
+  transition: 0.5s;
+  &:hover {
+    background-color: rgb(210, 44, 44);
+    transition: 0.5s;
+  }
+}
+
+.diceResult {
+  font-size: 24px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.diceImages {
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.diceImages img {
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
